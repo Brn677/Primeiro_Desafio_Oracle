@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Decodificador</title>
+</head>
+
+<body>
+   <img class="logo" src="midia/Vector.png">
+    <div class="enter">
+        <textarea name="enter" id="EnterInput" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+    </div>
+    
+    <div class="cont">
+
+        <div class="container-button">
+            <p>Apenas letras minúsculas e sem acento.</p>
+
+            <div>
+                <button class="criptograf" onclick="btnCript()" >
+                    Criptografar
+                </button>
+                <button class="descriptograf" onclick="btnDescript()">
+                    Descriptografar
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="flexCont" class="out">
+        <img  src="midia/detetive.png">
+        <h2 id="title">Nenhuma mensagem encontrada</h2>
+        
+            <div id="copyCont" >
+
+                <textarea spellcheck="false" class="hidden"  id="out"></textarea>
+                <p class="noText" id="noText">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                
+            </div>
+            <button id="copy" class="descriptograf hidden" onclick="copyToClipBoard()">Copiar</button>
+            
+    </div>
+    <footer>&copy;Copyright Bruno Silva - 2022</h3></footer>
+        
+        <script src="index.js"></script>
+</body>
+</html>
+
+</html>
